@@ -1,0 +1,27 @@
+namespace CsharpAD06;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        LacoRepeticao();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- EXERCÍCIOS DE LAÇO DE REPETIÇÃO --");
+    }
+
+    public static void LacoRepeticao()
+    {
+        Console.WriteLine("Determine a tabuada:");
+        int Calculadora = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"{Calculadora} x {i} = {Calculadora * i}");
+        }
+    }
+}

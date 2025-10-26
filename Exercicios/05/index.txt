@@ -1,0 +1,30 @@
+namespace CsharpAD06;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        LacoRepeticao();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- EXERCÍCIOS DE LAÇO DE REPETIÇÃO --");
+    }
+
+    public static void LacoRepeticao()
+    {
+        Console.WriteLine("Determine o início da contagem:");
+        int Inicio = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Determine o fim da contagem:");
+        int Fim = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = Inicio; i <= Fim; i+= 2)
+        {
+            Console.WriteLine(i + 1);
+        }
+    }
+}

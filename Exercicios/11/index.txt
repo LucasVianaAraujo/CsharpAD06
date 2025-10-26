@@ -1,0 +1,40 @@
+namespace CsharpAD06;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        LacoRepeticao();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- EXERCÍCIOS DE LAÇO DE REPETIÇÃO --");
+    }
+
+    public static void LacoRepeticao()
+    {
+        Console.WriteLine("Determine a frase:");
+        string Frase = Console.ReadLine();
+
+        // string FraseReformulada = Frase.Replace(" ", "Espaço");
+
+        int i = 0;
+
+        foreach (char Letras in Frase)
+        {
+            if (Letras == ' ')
+            {
+                Console.WriteLine("Espaço");
+            }
+
+            else
+            {
+                i++;
+                Console.WriteLine($"Letra {i} = {Letras}");
+            }
+        }
+    }
+}

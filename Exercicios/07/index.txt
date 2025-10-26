@@ -1,0 +1,31 @@
+namespace CsharpAD06;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        LacoRepeticao();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- EXERCÍCIOS DE LAÇO DE REPETIÇÃO --");
+    }
+
+    public static void LacoRepeticao()
+    {
+        Console.WriteLine("Determine o limite de exibição de asterisco(s):");
+        int Limite = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 1; i <= Limite; i++)
+        {
+            for (int j = 1; j <= Limite; j++)
+            {
+                Console.Write('*');
+            }
+            Console.WriteLine();
+        }
+    }
+}
